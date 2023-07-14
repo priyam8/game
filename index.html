@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Let's Play!</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------styling files------->
+   <link rel="stylesheet" type="text/css" href="game.css">
+
+ </head>
+  <body style="background-color: #68d2cd;">
+
+    <div class="game1">
+       
+        <div style="background-color:rgb(238, 149, 119);">
+          <h1 style="font-size:20px;font-family:sans-serif;">Rock Paper Scissors (Game 1)</h1>
+          
+        </div>
+
+        <div class="mainBoard">
+            <div class="dis" style="background-color: #a790d1;">
+                <h2>The Challenger</h2>
+                <div class="display">
+                    <img src="../icons/hero.gif" style="width: 100%;height:100%;" >
+                </div>
+                <div style="width: 100%;display:flex;justify-content:center;margin-top:15px;gap:5px;">
+                    <button class="game1Btn" id="rock">Rock</button>
+                    <button class="game1Btn" id="paper">Paper</button>
+                    <button class="game1Btn" id="scissors">Scissors</button>
+
+                </div>
+            </div>
+
+            <div class="dis" id="resultDisplay" style="background-color: #e1f28a;">
+                <h2 id="tr">Wrong Destination Human</h2>
+                <p id="pr">Now win this game to save
+                     humanity.<i>HiHiHi...</i>
+                </p>
+
+                <div style="display: flex;">
+                    <div class="display xr">
+                        <img src="" style="width: 100%;height:100%;" id="challengerChoiceImg">
+                    </div>
+    
+                    <div class="display xr">
+                        <img src="" style="width: 100%;height:100%;" id="winnerImg">
+                    </div>
+
+                    <div class="display xr">
+                        <img src="" style="width: 100%;height:100%;" id="computerChoiceImg">
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="dis" style="background-color: #7e7d7d;">
+                <h2>The Computron</h2>
+                <div class="display">
+                    <img src="../icons/face.gif" style="width: 100%;height:100%;">
+                </div>
+                <div id="computerChoice" style="margin-top:15px;color:white;font-weight:bold;text-transform:uppercase;font-family:sans-serif" >
+                    hi human!
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="game2 game1">
+        
+     <div style="background-color: #a049ba;">
+        <h1 style="font-size:20px;font-family:sans-serif;">Tic Tac Toe (Game 2)</h1>
+     </div>
+
+     <div style="background-color: #db7bf0;display:flex;justify-content:space-evenly;align-items:center">
+        <div class="chat">
+            <div id="comment" style="width: 95%;height:60%;display:flex; justify-content:center;align-items:center;color:white;font-family:sans-serif;font-size:14px">
+                   Choose With Whom you like to play
+            </div>
+            <button id="playWithComp" style="width:fit-content; height:25px;" > 
+                Computron
+            </button>
+            <button id="playWithHuman" style="width:fit-content; height:25px;" > 
+             Human Player
+            </button>
+        </div>
+<!------------------------GAME BOARD----------------->
+        <div class="gameBoard">
+             <img id="game2Img" src="../icons/game2.gif" style="height: 100%;width:100%;">
+        </div>
+
+     </div>
+
+    </div>
+
+<button id="reLoad" onclick="window.location.reload();">Re-Load</button>
+
+<div id="moving">
+    <img src="../icons/moving.gif"  style="height: 100%;width:100%">
+</div>
+
+
+<script src="game.js"></script>
+  </body>
+</html>
