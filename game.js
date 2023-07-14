@@ -80,18 +80,18 @@ document.querySelectorAll(".xr").forEach(item => item.style.display ="block")
    let b = document.querySelector("#winnerImg");
    let c = document.querySelector("#computerChoiceImg");
 
-    if( humanChoose == "rock"){a.src = "/icons/rock.gif"; }
-    if( humanChoose == "paper"){a.src = "/icons/paper.gif"; }
-    if( humanChoose == "scissors"){a.src = "/icons/scissors.gif"; }
+    if( humanChoose == "rock"){a.src = "icons/rock.gif"; }
+    if( humanChoose == "paper"){a.src = "icons/paper.gif"; }
+    if( humanChoose == "scissors"){a.src = "icons/scissors.gif"; }
 
-    if (winner=="human"){b.src="/icons/welcom2.gif";}
-    if (winner=="computer"){b.src="/icons/smile.gif";}
-    if (winner=="none"){b.src="/icons/equal.gif";}
+    if (winner=="human"){b.src="icons/welcom2.gif";}
+    if (winner=="computer"){b.src="icons/smile.gif";}
+    if (winner=="none"){b.src="icons/equal.gif";}
 
 
-    if( computerChoose == "rock"){c.src = "/icons/rock.gif"; }
-    if( computerChoose == "paper"){c.src = "/icons/paper.gif"; }
-    if( computerChoose == "scissors"){c.src = "/icons/scissors.gif"; }
+    if( computerChoose == "rock"){c.src = "icons/rock.gif"; }
+    if( computerChoose == "paper"){c.src = "icons/paper.gif"; }
+    if( computerChoose == "scissors"){c.src = "icons/scissors.gif"; }
 
 }
 
@@ -332,9 +332,9 @@ function addImgGame2(x){
     gameBoard.appendChild(game2Img);
 
     if (x.includes("Human")){
-         game2Img.src = "/icons/welcom2.gif";
+         game2Img.src = "icons/welcom2.gif";
     }
     if(x.includes("Computron")){
-        game2Img.src = "/icons/smile.gif";
+        game2Img.src = "icons/smile.gif";
     }
 }
