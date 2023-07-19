@@ -132,8 +132,8 @@ h2{
 }
 
 #reLoad{
-  position: relative;
-  bottom: -200px;
+   position: absolute;
+  bottom: 0;
   height: 60px;
   width: 150px;
   margin: auto;
